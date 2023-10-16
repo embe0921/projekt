@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Projekt
+build_property.RootNamespace = Projekt
+build_property.ProjectDir = C:\Users\emeli\source\repos\Projekt\Projekt\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\emeli\source\repos\Projekt\Projekt
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Hotellbokning/Bokning.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxsYm9rbmluZ1xCb2tuaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Hotellbokning/Bokningsdetaljer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxsYm9rbmluZ1xCb2tuaW5nc2RldGFsamVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Hotellbokning/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxsYm9rbmluZ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Hotellbokning/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxsYm9rbmluZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Hotellbokning/Inloggning.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxsYm9rbmluZ1xJbmxvZ2duaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Hotellbokning/MinProfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxsYm9rbmluZ1xNaW5Qcm9maWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Hotellbokning/NewGuest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxsYm9rbmluZ1xOZXdHdWVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Hotellbokning/SelectHotellWithDataSet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxsYm9rbmluZ1xTZWxlY3RIb3RlbGxXaXRoRGF0YVNldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emeli/source/repos/Projekt/Projekt/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pwdsqgl44g

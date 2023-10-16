@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+@model Projekt.Models.ViewModelBR
+
+@{
+    ViewData["Title"] = "Bokning";
+}
+
+@{
+    int i = 0;
+    if (ViewData["Rumstyp"] != null) { i = (int)ViewData["Rumstyp"]; }
+    string s = ViewBag.error;
+    if (ViewBag.error != null)
+    {
+
+    }
+}
+
+
+<h1>Boka hotell här</h1>
+
+<h4>Välj datum och rumstyp</h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Bokning">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CheckInDatum" class="control-label">Datum för incheckning</label>
+                <input asp-for="CheckInDatum" type="date" class="form-control" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="CheckInDatum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CheckUtDatum" class="control-label">Datum för utcheckning</label>
+                <input asp-for="CheckUtDatum" type="date" class="form-control" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="CheckUtDatum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RumstypLista" class="control-label">Rumstyp</label>
+
+                <select name="ValtRumstypId" class="form-control">
+
+                    <option value="">Välj en rumstyp</option>
+
+                    @foreach (var rumstyp in Model.RumstypLista)
+                    {
+                        <option value="@rumstyp.RumstypId">
+                            @rumstyp.Namn - @rumstyp.PrisPerNatt kr
+                        </option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Boka" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+ 
+@if (!string.IsNullOrEmpty(ViewBag.error))
+{
+    <div class="alert alert-danger">
+        @ViewBag.error
+    </div>
+}
+

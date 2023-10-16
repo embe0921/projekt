@@ -1,0 +1,42 @@
+﻿@model Projekt.Models.Guest
+
+@{
+    ViewData["Title"] = "Inloggning";
+}
+
+<h1>Välkommen till Scandic!</h1>
+<p></p>
+
+
+<h4>Vänligen logga in för att genomföra en bokning.</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Inloggning">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Epost" class="control-label"></label>
+                <input asp-for="Epost" class="form-control" />
+                <span asp-validation-for="Epost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Losenord" class="control-label">Lösenord</label>
+                <input asp-for="Losenord" class="form-control" />
+                <span asp-validation-for="Losenord" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Logga in" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="NewGuest">Är du ny användare? Registrera dig här.</a>
+</div>
+
+@ViewBag.ErrorMessage
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

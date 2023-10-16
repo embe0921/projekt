@@ -1,0 +1,32 @@
+﻿@model Projekt.Models.Bokning
+
+@{
+    ViewData["Title"] = "Bokningsdetaljer";
+}
+
+<h1>Bokningsdetaljer</h1>
+
+<div>
+    <dl class="row">
+  
+        <dt class = "col-sm-2">
+            <p>Datum för incheckning</p>
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CheckInDatum)
+        </dd>
+        <dt class = "col-sm-2">
+            <p>Datum för utcheckning</p>
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CheckUtDatum)
+        </dd>
+        <dt class = "col-sm-2">
+            <p>Total kostnad</p>
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalKostnad)
+        </dd>
+    </dl> 
+</div>
+

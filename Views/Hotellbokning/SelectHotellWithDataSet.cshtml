@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Projekt.Models.Hotell>
+
+@{
+    ViewData["Title"] = "SelectHotellWithDataSet";
+}
+
+<h1>Välj ett av våra hotell</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <p>Hotell</p>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    <img src="~/bilder/@Html.DisplayFor(modelItem => item.Bild)" height="200px" />
+                    @Html.ActionLink(item.Namn, "Details", new { id = item.HotellId })
+
+             
+            </td>
+      
+        </tr>
+}
+    </tbody>
+</table>
+

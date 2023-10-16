@@ -1,0 +1,58 @@
+﻿@model Projekt.Models.ProfilBokningarVM
+
+@{
+    ViewData["Title"] = "MinProfil";
+}
+
+<h1>Min profil</h1>
+
+<table class="table">
+
+ 
+    <tbody>
+        <table class="table">
+            <tr>
+                <th>Förnamn</th>
+                <th>Efternamn</th>
+                <th>Epost</th>
+                <th>Telefon</th>
+
+            </tr>
+
+            @foreach (Projekt.Models.Guest guest in Model.GuestLista)
+            {
+                <tr>
+                    <td>@guest.Fornamn</td>
+                    <td>@guest.Efternamn</td>
+                    <td>@guest.Epost</td>
+                    <td>@guest.Telefon</td>
+                    <td>
+                        @Html.ActionLink("Redigera användare", "Edit", new { id=guest.GuestId }) 
+                    </td>
+                </tr>
+            }
+        </table>
+</tbody>
+
+<h4>Mina bokningar</h4>
+    <tbody>
+        <table class="table">
+            <tr>
+                <th>Hotell</th>
+                <th>Incheckning</th>
+                <th>Utcheckning</th>
+            </tr>
+
+        @foreach (Projekt.Models.BokningHotell bokningHotell in Model.BokningHotellLista)
+        {
+            <tr>
+                <td>@bokningHotell.HotellNamn</td>
+                <td>@bokningHotell.CheckInDatum.ToString("yyyy-MM-dd")</td>
+                <td>@bokningHotell.CheckUtDatum.ToString("yyyy-MM-dd")</td>
+            </tr>
+
+        }
+        </table>
+   
+    </tbody>
+</table>

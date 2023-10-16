@@ -1,0 +1,50 @@
+﻿@model Projekt.Models.Guest
+
+@{
+    ViewData["Title"] = "NewGuest";
+}
+
+<h1>Skapa ny användare</h1>
+
+<h4>Fyll i dina uppgifter nedan</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="NewGuest">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Fornamn" class="control-label">Förnamn</label>
+                <input asp-for="Fornamn" class="form-control" />
+                <span asp-validation-for="Fornamn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Efternamn" class="control-label"></label>
+                <input asp-for="Efternamn" class="form-control" />
+                <span asp-validation-for="Efternamn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Epost" class="control-label"></label>
+                <input asp-for="Epost" class="form-control" />
+                <span asp-validation-for="Epost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefon" class="control-label"></label>
+                <input asp-for="Telefon" class="form-control" />
+                <span asp-validation-for="Telefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Losenord" class="control-label">Lösenord</label>
+                <input asp-for="Losenord" class="form-control" />
+                <span asp-validation-for="Losenord" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Gå vidare" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
